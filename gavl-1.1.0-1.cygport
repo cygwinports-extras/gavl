@@ -1,0 +1,12 @@
+DESCRIPTION="Gmerlin Audio Video Library"
+HOMEPAGE="http://gmerlin.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gmerlin/${P}.tar.gz"
+PATCH_URI="1.1.0-no-undefined.patch
+           1.1.0-visibility.patch
+           1.1.0-llrint.patch"
+
+PKG_NAMES="${PN} libgavl1 libgavl-devel"
+libgavl1_CONTENTS="--exclude=apiref usr/bin/cyggavl-1.dll usr/share/doc/"
+libgavl_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/${P}/apiref/"
+
+CYGCONF_ARGS="ac_cv_search_clock_gettime=no"

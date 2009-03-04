@@ -1,0 +1,11 @@
+--- origsrc/gavl-1.1.0/configure.ac	2008-09-30 15:41:05.000000000 -0500
++++ src/gavl-1.1.0/configure.ac	2009-03-04 16:50:33.226625000 -0600
+@@ -153,7 +153,7 @@ LQT_TRY_CFLAGS([-Wall], CFLAGS="$CFLAGS 
+ LQT_TRY_CFLAGS([-Wmissing-declarations], CFLAGS="$CFLAGS -Wmissing-declarations" )
+ LQT_TRY_CFLAGS([-Wdeclaration-after-statement], CFLAGS="$CFLAGS -Wdeclaration-after-statement")
+ LQT_TRY_CFLAGS([-mfpmath=387], CFLAGS="$CFLAGS -mfpmath=387")
+-LQT_TRY_CFLAGS([-Wall], CFLAGS="$CFLAGS -fvisibility=hidden")
++LQT_TRY_CFLAGS([-fvisibility=hidden], CFLAGS="$CFLAGS -fvisibility=hidden")
+ 
+ dnl
+ dnl Stuff from libsamplerate
