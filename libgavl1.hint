@@ -1,5 +1,5 @@
 category: Audio Video
-requires: cygwin
+requires: libgcc1
 external-source: gavl
 sdesc: "Gmerlin Audio Video Library (runtime)"
 ldesc: "Gavl is short for Gmerlin Audio Video Library. It is a low level 
