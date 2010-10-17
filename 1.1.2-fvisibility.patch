@@ -1,0 +1,11 @@
+--- origsrc/gavl-1.1.2/m4/lqt_opt_cflags.m4	2007-11-20 13:26:09.000000000 -0600
++++ src/gavl-1.1.2/m4/lqt_opt_cflags.m4	2010-10-15 15:48:14.450639600 -0500
+@@ -7,7 +7,7 @@ dnl check if $CC supports a given set of
+ AC_DEFUN([LQT_TRY_CFLAGS],
+     [AC_MSG_CHECKING([if $CC supports $1 flags])
+     SAVE_CFLAGS="$CFLAGS"
+-    CFLAGS="$1"
++    CFLAGS="$1 -Werror"
+     AC_TRY_COMPILE([],[],[lqt_try_cflags_ok=yes],[lqt_try_cflags_ok=no])
+     CFLAGS="$SAVE_CFLAGS"
+     AC_MSG_RESULT([$lqt_try_cflags_ok])

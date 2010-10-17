@@ -11,20 +11,20 @@ provides some elementary operations (copying, scaling, alpha blending
 etc).
 
 Runtime requirements:
-  cygwin-1.7.0-51
-  libgcc1-4.3.2-2
+  cygwin-1.7.7-1
+  libgcc1-4.5.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-2.19.51-1
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-14
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  gawk-3.1.7-1
+  gcc4-core-4.5.0-1
+  libtool-2.2.7a-15
   make-3.81-2
-  sed-4.1.5-2
+  sed-4.2.1-1
 
 Canonical website:
   http://gmerlin.sourceforge.net/
@@ -35,107 +35,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gavl-1.1.1-X-src.tar.bz2
+  unpack gavl-1.1.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gavl-1.1.1-X.cygport all
+  cygport ./gavl-1.1.2-X.cygport all
 
 This will create:
-  /usr/src/gavl-1.1.1-X-src.tar.bz2
-  /usr/src/libgavl-devel-1.1.1-X.tar.bz2
-  /usr/src/libgavl1-1.1.1-X.tar.bz2
+  /usr/src/gavl-1.1.2-X-src.tar.bz2
+  /usr/src/libgavl-devel-1.1.2-X.tar.bz2
+  /usr/src/libgavl1-1.1.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-(libgavl1)
-  /usr/bin/cyggavl-1.dll
-  /usr/share/doc/gavl/AUTHORS
-  /usr/share/doc/gavl/COPYING
-  /usr/share/doc/gavl/README
-  /usr/share/doc/gavl/TODO
-
-(libgavl-devel)
-  /usr/include/gavl/gavl.h
-  /usr/include/gavl/gavl_version.h
-  /usr/include/gavl/gavldsp.h
-  /usr/include/gavl/gavltime.h
-  /usr/include/gavl/timecode.h
-  /usr/lib/libgavl.dll.a
-  /usr/lib/libgavl.la
-  /usr/lib/pkgconfig/gavl.pc
-  /usr/share/doc/gavl/apiref/annotated.html
-  /usr/share/doc/gavl/apiref/dir_5bb65176a5d7c9d6d9d4818eaae06a5e.html
-  /usr/share/doc/gavl/apiref/dir_c5330560c575cc86fa758d30afb56afd.html
-  /usr/share/doc/gavl/apiref/dir_dda756736eca8043b5974d7a707863ee.html
-  /usr/share/doc/gavl/apiref/dir_e72765707c59c28042e65ef79eb1cac4.html
-  /usr/share/doc/gavl/apiref/dir_feab8c45deec37950872fdde49dfbefd.html
-  /usr/share/doc/gavl/apiref/dirs.html
-  /usr/share/doc/gavl/apiref/doxygen.css
-  /usr/share/doc/gavl/apiref/doxygen.png
-  /usr/share/doc/gavl/apiref/files.html
-  /usr/share/doc/gavl/apiref/functions.html
-  /usr/share/doc/gavl/apiref/functions_vars.html
-  /usr/share/doc/gavl/apiref/gavl_8h-source.html
-  /usr/share/doc/gavl/apiref/gavl_8h.html
-  /usr/share/doc/gavl/apiref/gavldsp_8h-source.html
-  /usr/share/doc/gavl/apiref/gavltime_8h-source.html
-  /usr/share/doc/gavl/apiref/globals.html
-  /usr/share/doc/gavl/apiref/globals_defs.html
-  /usr/share/doc/gavl/apiref/globals_enum.html
-  /usr/share/doc/gavl/apiref/globals_eval.html
-  /usr/share/doc/gavl/apiref/globals_func.html
-  /usr/share/doc/gavl/apiref/globals_type.html
-  /usr/share/doc/gavl/apiref/group__accel__flags.html
-  /usr/share/doc/gavl/apiref/group__audio.html
-  /usr/share/doc/gavl/apiref/group__audio__conversion__flags.html
-  /usr/share/doc/gavl/apiref/group__audio__converter.html
-  /usr/share/doc/gavl/apiref/group__audio__format.html
-  /usr/share/doc/gavl/apiref/group__audio__frame.html
-  /usr/share/doc/gavl/apiref/group__audio__options.html
-  /usr/share/doc/gavl/apiref/group__dsp.html
-  /usr/share/doc/gavl/apiref/group__dsputils.html
-  /usr/share/doc/gavl/apiref/group__peak__detection.html
-  /usr/share/doc/gavl/apiref/group__quality.html
-  /usr/share/doc/gavl/apiref/group__rectangle.html
-  /usr/share/doc/gavl/apiref/group__time.html
-  /usr/share/doc/gavl/apiref/group__timecode.html
-  /usr/share/doc/gavl/apiref/group__timer.html
-  /usr/share/doc/gavl/apiref/group__video.html
-  /usr/share/doc/gavl/apiref/group__video__blend.html
-  /usr/share/doc/gavl/apiref/group__video__conversion__flags.html
-  /usr/share/doc/gavl/apiref/group__video__converter.html
-  /usr/share/doc/gavl/apiref/group__video__deinterlacer.html
-  /usr/share/doc/gavl/apiref/group__video__format.html
-  /usr/share/doc/gavl/apiref/group__video__frame.html
-  /usr/share/doc/gavl/apiref/group__video__options.html
-  /usr/share/doc/gavl/apiref/group__video__scaler.html
-  /usr/share/doc/gavl/apiref/group__video__transform.html
-  /usr/share/doc/gavl/apiref/group__volume__control.html
-  /usr/share/doc/gavl/apiref/index.html
-  /usr/share/doc/gavl/apiref/modules.html
-  /usr/share/doc/gavl/apiref/structgavl__audio__format__t.html
-  /usr/share/doc/gavl/apiref/structgavl__audio__frame__t.html
-  /usr/share/doc/gavl/apiref/structgavl__dsp__funcs__t.html
-  /usr/share/doc/gavl/apiref/structgavl__overlay__t.html
-  /usr/share/doc/gavl/apiref/structgavl__rectangle__f__t.html
-  /usr/share/doc/gavl/apiref/structgavl__rectangle__i__t.html
-  /usr/share/doc/gavl/apiref/structgavl__timecode__format__t.html
-  /usr/share/doc/gavl/apiref/structgavl__video__format__s.html
-  /usr/share/doc/gavl/apiref/structgavl__video__frame__t.html
-  /usr/share/doc/gavl/apiref/tab_b.gif
-  /usr/share/doc/gavl/apiref/tab_l.gif
-  /usr/share/doc/gavl/apiref/tab_r.gif
-  /usr/share/doc/gavl/apiref/tabs.css
-  /usr/share/doc/gavl/apiref/timecode_8h-source.html
-  /usr/share/doc/gavl/apiref/uniongavl__audio__channels__t.html
-  /usr/share/doc/gavl/apiref/uniongavl__audio__samples__t.html
-
-------------------
-
 Port Notes:
+
+----- version 1.1.2-1 -----
+Version bump.
 
 ----- version 1.1.1-1 -----
 Initial release for Cygwin 1.7.
