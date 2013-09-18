@@ -1,0 +1,27 @@
+NAME="gavl"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Gmerlin Audio Video Library"
+DESCRIPTION="Gavl is short for Gmerlin Audio Video Library. It is a low
+level library, upon which multimedia APIs can be built. Gavl handles all the
+details of audio and video formats like colorspaces, samplerates,
+multichannel configurations etc. It provides standardized definitions for
+those formats as well as container structures for carrying audio samples or
+video images inside an application. In addition, it handles the sometimes
+ugly task to convert between all these formats and provides some elementary
+operations (copying, scaling, alpha blending etc)."
+DESCRIPTION="Gmerlin Audio Video Library"
+HOMEPAGE="http://gmerlin.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gmerlin/${P}.tar.gz"
+
+PATCH_URI="
+	1.1.1-no-undefined.patch
+	1.1.2-fvisibility.patch
+"
+
+PKG_NAMES="libgavl1 libgavl-devel libgavl-doc"
+libgavl1_CONTENTS="--exclude=apiref usr/bin/cyggavl-1.dll usr/share/doc/"
+libgavl_devel_CONTENTS="usr/include/ usr/lib/"
+libgavl_doc_CATEGORY="Doc"
+libgavl_doc_CONTENTS="usr/share/doc/gavl/apiref/"
